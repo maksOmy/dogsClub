@@ -313,7 +313,7 @@ header h2 {
 
     margin: 0 auto;
 
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
 /*style advantages-2 block*/
@@ -322,7 +322,7 @@ header h2 {
     background: linear-gradient(305.32deg, #FE5837 -7.23%, #FFB443 95.83%);
     color: #fff;
 
-    padding: 100px 50px 100px 140px;
+    padding: 70px 50px 100px 140px;
 }
 
 .advantages-2-content {
@@ -331,11 +331,62 @@ header h2 {
     width: 50%;
 }
 
+.advantages-2-content h2 {
+    text-transform: uppercase;
+}
+
+.advantages-2-content h2 b {
+    text-decoration: underline;
+}
+
 .advantages-2-item {
     position: relative;
     padding-left: 120px;
 }
 
-.advantages-icon-1 {
-    
+.advantages-icon-1::after {
+    content: "";
+    position: absolute;
+
+    top: -10px;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+
+    background: url(../images/WatchIcon.png) no-repeat;
+}
+
+.advantages-icon-2::after {
+    content: "";
+    position: absolute;
+
+    top: -5px;
+    left: 10px;
+
+    width: 100px;
+    height: 100px;
+
+    background: url(../images/profIcon.png) no-repeat;
+}
+
+.advantages-icon-3::after {
+    content: "";
+    position: absolute;
+
+    top: -5px;
+    left: 10px;
+
+    width: 100px;
+    height: 100px;
+
+    background: url(../images/commentIcon.png) no-repeat;
+}
+
+.advantages-2-btn {
+    margin: 0;
+
+    background: none;
+
+    border: 1px #fff solid;
 }
