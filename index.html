@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="src/index.js" async></script>
     <title>Document</title>
 </head>
 <body>
@@ -31,21 +32,39 @@
         <h1 class="text-color-white">Подберите услугу для своей собаки</h1>
         <h2 class="text-color-white">Выезд специалиста к вам на дом</h2>
         <form class="search-form">
-            <select class="search-form-first-item select">
-                <option>Значение 1</option> 
-                <option>Значение 2</option>
-                <option>Значение 3</option>
-            </select>
-            <select class="select">
-                <option>Значение 1</option> 
-                <option>Значение 2</option>
-                <option>Значение 3</option>
-            </select>
-            <select class="select">
-                <option>Значение 1</option> 
-                <option>Значение 2</option>
-                <option>Значение 3</option>
-            </select>
+            <div class="select-breed select" data-state="">
+                <div class="select-title select-breed" data-default="Выберите породу">Выберите породу</div>
+                <div class="select-content">
+                    <input id="breedSelect0" class="select-input" type="radio" name="breedSelect" checked />
+                    <label for="breedSelect0" class="select-label">Выберите породу</label>
+                    <input id="breedSelect1" class="select-input" type="radio" name="breedSelect"/>
+                    <label for="breedSelect1" class="select-label">Лабрадор</label>
+                    <input id="breedSelect2" class="select-input" type="radio" name="breedSelect"/>
+                    <label for="breedSelect2" class="select-label">Питбуль</label>
+                </div>
+            </div>
+            <div class="select-service select" data-state="">
+                <div class="select-title select-service" data-default="Выберите породу">Выберите породу</div>
+                <div class="select-content">
+                    <input id="serviceSelect0" class="select-input" type="radio" name="serviceSelect" checked />
+                    <label for="serviceSelect0" class="select-label">Выберите породу</label>
+                    <input id="serviceSelect1" class="select-input" type="radio" name="serviceSelect"/>
+                    <label for="serviceSelect1" class="select-label">Лабрадор</label>
+                    <input id="serviceSelect2" class="select-input" type="radio" name="serviceSelect"/>
+                    <label for="serviceSelect2" class="select-label">Питбуль</label>
+                </div>
+            </div>
+            <div class="select-city select" data-state="">
+                <div class="select-title select-city" data-default="Выберите породу">Выберите породу</div>
+                <div class="select-content">
+                    <input id="citySelect0" class="select-input" type="radio" name="citySelect" checked />
+                    <label for="citySelect0" class="select-label">Выберите породу</label>
+                    <input id="citySelect1" class="select-input" type="radio" name="citySelect"/>
+                    <label for="citySelect1" class="select-label">Лабрадор</label>
+                    <input id="citySelect2" class="select-input" type="radio" name="citySelect"/>
+                    <label for="citySelect2" class="select-label">Питбуль</label>
+                </div>
+            </div>
             <button class="search-btn btn">Найти</button>
         </form>
     </header>

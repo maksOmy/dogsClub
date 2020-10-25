@@ -142,6 +142,8 @@ header h2 {
     font-weight: 500;
 }
 
+/*select style*/
+
 .search-form {
     display: flex;
     align-items: center;
@@ -155,14 +157,108 @@ header h2 {
 }
 
 .select {
-    padding: 25px 40px;
+    position: relative;
+    height: 80px;
     width: 25%;
     background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.search-form-first-item {
+.select-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 8px 16px;
+    border: solid 1px #c7ccd1;
+    
+    cursor: pointer;   
+}
+
+.select-title::before,
+.select-title::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 16px;
+
+    display: block;
+    width: 10px;
+    height: 2px;
+
+    transition: all 0.3s ease-out;
+
+    background-color: #333333;
+
+    transform: translate(-3px, -50%) rotate(45deg);
+}
+.select-title::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.select-title,
+.select-title::after:hover,
+.select-title::before:hover {
+    color:#FE803C;    
+}
+
+.select-breed {
     border-radius: 40px 0 0 40px;
+}
+
+
+.select-content {
+    position: absolute;
+    top: 80px;
+    left: 3px;
+
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 6px);
+
+    background-color: #ffffff;
+
+    border: 1px solid #c7ccd1;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  
+    transition: all 0.3s ease-out;
+
+    opacity: 0;
+    z-index: 8;
+}
+
+.select-input {
+    display: none;
+}
+
+.select-input,
+.select-label {
+    padding-top: 27px;
+    text-align: center;
+    min-height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.__select__label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-height: 0;
+    padding: 0 16px;
+    
+    transition: all 0.2s ease-out;
+  
+    cursor: pointer;
+    
+    overflow: hidden;
+}
+
+.select-label:hover {
+    color: #FE803C;
 }
 
 .search-btn {
