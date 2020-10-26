@@ -21,9 +21,10 @@ selectSingle_title.forEach((selectTitle) => {
 // Close when click to option
 selectSingle_labels.forEach((option) => {
     const selectContent = option.closest('.select-content');
+    const selectTitle = selectContent.previousElementSibling;
     const selectSingle = option.closest('.select');
     option.addEventListener('click', (evt) => {
-        selectSingle_title.textContent = evt.target.textContent;
+        selectTitle.textContent = evt.target.textContent;
         selectSingle.setAttribute('data-state', '');
         selectContent.style.opacity = "0";
       });
