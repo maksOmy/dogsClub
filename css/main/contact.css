@@ -1,0 +1,59 @@
+.contact {
+    align-items: center;
+}
+
+.contact-heading {
+    text-transform: uppercase;
+}
+
+.contact-img {
+    width: 60%;
+    height: auto;
+}
+
+.contact-form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+}
+
+.contact-form::before {
+    content: "";
+    position: absolute;
+
+    right: -30px;
+    top: -40px;
+
+    align-items: center;
+    width: 77px;
+    height: 77px;
+    background: url('../images/foot.png') no-repeat;
+    background-size: 77px 77px;
+}
+
+.contact-form-input {
+    width: 100%;
+
+    border: none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.24);
+
+    padding-left: 30px;
+}
+
+.contact-btn {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+.contact-form-input:first-child {
+    border-radius: 20px 20px 0 0;
+}
+
+.contact-btn {
+    font-size: 18px;
+    font-family: "Open Sans" sans-serif;
+}
