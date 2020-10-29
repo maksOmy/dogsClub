@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #ffffff;
     font-size: 18px;
     font-weight: 400;
@@ -27,8 +27,6 @@ h1 {
     width: 100%;
 
     margin-bottom: 20px;
-
-    font-family: "Montserrat", sans-serif;
     font-size: 30px;
     font-weight: 800;
 }
@@ -37,16 +35,12 @@ h2 {
     width: 100%;
 
     margin-bottom: 20px;
-
-    font-family: "Montserrat", sans-serif;
     font-size: 25px;
     font-weight: 800;
 }
 
 p {
     width: 100%;
-
-    font-family: "Montserrat", sans-serif;
     margin-bottom: 50px;
 }
 
@@ -58,7 +52,7 @@ p {
     max-width: 1440px;
     padding: 0 10%;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 5%;
 }
 
 .btn {

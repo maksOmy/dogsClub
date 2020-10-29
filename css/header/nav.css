@@ -74,15 +74,13 @@ header h2 {
 }
 
 @media (max-width: 1140px) {
-
-    .main-nav {
-        flex-wrap: nowrap;
-    }
-
     .nav-list-item {
-
         text-align: center;
     }
+
+    header h1 {
+        margin-top: 20%;
+    }    
 }
 
 

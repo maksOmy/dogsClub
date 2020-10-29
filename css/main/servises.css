@@ -16,41 +16,55 @@
     padding-bottom: 20px;
 
     background-color: blue;
-    min-width: 370px;
-    min-height: 370px;
+    width: 32%;
+    min-width: 250px;
+    height: 300px;
+    min-height: 250px;
 
     border-radius: 20px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.cards-item:not(:last-child) {
+    margin-right: 0;
+}
+.cards-item:last-child {
+    margin-right: 0;
 }
 
 .bg-img-card-item-1 {
     background: url(../../images/card-1.jpg) no-repeat;
-    width: 370px;
-    height: 370px;
+    background-size: 100% auto;
 }
 .bg-img-card-item-2 {
     background: url(../../images/card-2.jpg) no-repeat;
-    width: 370px;
-    height: 370px;
+    background-size: 100% auto;
 }
 .bg-img-card-item-3 {
     background: url(../../images/card-3.jpg) no-repeat;
-    width: 370px;
-    height: 370px;
+    background-size: 100% auto;
 }
 .bg-img-card-item-4 {
     background: url(../../images/card-4.jpg) no-repeat;
-    width: 370px;
-    height: 370px;
+    background-size: 100% auto;
 }
 .bg-img-card-item-5 {
     background: url(../../images/card-5.jpg) no-repeat;
-    width: 370px;
-    height: 370px;
+    background-size: 100% auto;
 }
 .bg-img-card-item-6 {
     background: url(../../images/card-6.jpg) no-repeat;
-    width: 370px;
-    height: 370px;
+    background-size: 100% auto;
+}
+
+@media (max-width: 1140px) {
+    .cards-item {
+        width: 49%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    
 }
