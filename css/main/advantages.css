@@ -37,7 +37,7 @@
 
 .advantages-item-icon {
     position: relative;
-    width: 60px;
+    min-width: 60px;
     margin-right: 45px;
     align-self: center;
     text-align: center;
@@ -46,7 +46,7 @@
 }
 
 .advantages-item img {
-    width:25px;
+    min-width:25px;
     height:25px;
     margin-right: 60px;
     margin-left: 20px;

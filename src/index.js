@@ -9,10 +9,12 @@ selectSingle_title.forEach((selectTitle) => {
         const select = selectTitle.closest('.select');
         if ('active' === select.getAttribute('data-state')) {
           select.setAttribute('data-state', '');
-          selectContent.style.opacity = "0";    
+          selectContent.style.opacity = "0";
+          selectContent.style.zIndex = "0";    
         } else {
           select.setAttribute('data-state', 'active');
           selectContent.style.opacity = "1";
+          selectContent.style.zIndex = "10";
         }
       });
 })
@@ -27,6 +29,7 @@ selectSingle_labels.forEach((option) => {
         selectTitle.textContent = evt.target.textContent;
         selectSingle.setAttribute('data-state', '');
         selectContent.style.opacity = "0";
+        selectContent.style.zIndex = "0";
       });
 });
   

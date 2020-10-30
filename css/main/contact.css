@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 35%;
+    min-width: 250px;
     height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.24);
     border-radius: 20px;
@@ -31,7 +32,7 @@
     align-items: center;
     width: 77px;
     height: 77px;
-    background: url('../images/foot.png') no-repeat;
+    background: url('../../images/foot.png') no-repeat;
     background-size: 77px 77px;
 }
 
@@ -56,4 +57,15 @@
 .contact-btn {
     font-size: 18px;
     font-family: "Open Sans" sans-serif;
+}
+
+@media (max-width:800px) {
+    .contact-img {
+        display: none;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
 }
