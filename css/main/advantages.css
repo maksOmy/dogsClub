@@ -79,16 +79,34 @@
 /*style advantages-2 block*/
 
 .advantages-2 {
+    position: relative;
     background: linear-gradient(305.32deg, #FE5837 -7.23%, #FFB443 95.83%);
-    color: #fff;
+    color: #fff;    
+    padding: 70px 50px 100px 10%;
+}
 
-    padding: 70px 50px 100px 140px;
+.advantages-2::after {
+    content: "";
+    position: absolute;
+
+    right: 100px;
+    top: 15%;
+    width: 400px;
+    height: 475px;
+
+    background: url(../../images/advantages-2.png);
+    background-size: 100% 100%;
 }
 
 .advantages-2-content {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+}
+
+.advantages-2 img {
+    width: 50%;
+    height: auto;
 }
 
 .advantages-2-content h2 {
@@ -114,7 +132,8 @@
     width: 100px;
     height: 100px;
 
-    background: url(../images/WatchIcon.png) no-repeat;
+    background: url(../../images/WatchIcon.png) no-repeat;
+    background-size: 100% auto;
 }
 
 .advantages-icon-2::after {
@@ -127,7 +146,8 @@
     width: 100px;
     height: 100px;
 
-    background: url(../images/profIcon.png) no-repeat;
+    background: url(../../images/profIcon.png) no-repeat;
+    background-size: 80% auto;
 }
 
 .advantages-icon-3::after {
@@ -140,7 +160,8 @@
     width: 100px;
     height: 100px;
 
-    background: url(../images/commentIcon.png) no-repeat;
+    background: url(../../images/commentIcon.png) no-repeat;
+    background-size: 80% auto;
 }
 
 .advantages-2-btn {
@@ -151,12 +172,33 @@
     border: 1px #fff solid;
 }
 
+@media (max-width: 1050px) {
+    .advantages-2::after {
+        right: 7%;
+        top: 20%;
+        width: 250px;
+        height: 280px;
+    }
+
+    .advantages-2-content {
+        width: 60%;
+    }
+}
+
 @media (max-width: 768px) {
     .advantages-list {
         background-position: bottom right;
     }
     .advantages-item-container {
         height: 200px;
+    }
+    
+    .advantages-2::after {
+        display: none;
+    }
+
+    .advantages-2-content {
+        width: 80%;
     }
 }
 
@@ -167,5 +209,36 @@
 
     .advantages-btn {
         min-width: 250px;
+    }
+
+    .advantages-2-item {
+        margin-top: 80px;
+        padding: 0;
+    }
+
+    .advantages-icon-1::after {
+        width: 50px;
+        height: 50px;
+
+        top: -50px;
+        left: 0;
+    }
+    .advantages-icon-2::after {
+        width: 50px;
+        height: 50px;
+
+        top: -50px;
+        left: 0;
+    }
+    .advantages-icon-3::after {
+        width: 50px;
+        height: 50px;
+
+        top: -50px;
+        left: 0;
+    }
+
+    .advantages-2-content {
+        width: 100%;
     }
 }
