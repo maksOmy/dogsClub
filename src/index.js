@@ -1,9 +1,11 @@
-const selectSingle_title = document.querySelectorAll('.select-title');
-const selectSingle_labels = document.querySelectorAll('.select-label');
 
-// Toggle menu
+const select = () => {
+  const selectSingle_title = document.querySelectorAll('.select-title');
+  const selectSingle_labels = document.querySelectorAll('.select-label');
 
-selectSingle_title.forEach((selectTitle) => {
+  // Toggle menu
+
+  selectSingle_title.forEach((selectTitle) => {
     const selectContent = selectTitle.nextElementSibling;
     selectTitle.addEventListener('click', () => {
         const select = selectTitle.closest('.select');
@@ -20,8 +22,8 @@ selectSingle_title.forEach((selectTitle) => {
 })
 
 
-// Close when click to option
-selectSingle_labels.forEach((option) => {
+  // Close when click to option
+  selectSingle_labels.forEach((option) => {
     const selectContent = option.closest('.select-content');
     const selectTitle = selectContent.previousElementSibling;
     const selectSingle = option.closest('.select');
@@ -31,5 +33,26 @@ selectSingle_labels.forEach((option) => {
         selectContent.style.opacity = "0";
         selectContent.style.zIndex = "0";
       });
-});
+  });
+};
+
+select();
+
+const burgerMenu = () => {
+  const burger = document.querySelector('.burger-menu');
+  const burgerNav = document.querySelector('.burger-nav');
+
+  burger.addEventListener('click', () => {
+    if (burger.classList.contains('active')) {
+      burger.classList.remove('active');
+      burgerNav.classList.remove('active');
+    }
+    else {
+      burger.classList.add('active');
+      burgerNav.classList.add('active');
+    }
+  });
+};
+
+burgerMenu();
   
