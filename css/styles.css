@@ -17,6 +17,8 @@ a {
     color: #000;
 }
 
+
+
 ul, li {
     margin: 0;
     padding: 0;
@@ -61,6 +63,23 @@ p {
     border: none;
     font-weight: 800;
     color: #fff;  
+}
+
+.btn:hover {
+    background: linear-gradient(305.32deg, rgba(254, 88, 55) -7.23%, rgba(255, 180, 67) 95.83%);
+}
+
+.link-decor::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.link-decor:hover::after {
+    width: 100%;
 }
 
 .text-color-white {
@@ -131,7 +150,7 @@ p {
 .burger-menu {
     display: none;
 }
-.log-in-btn {
+.log-in-btn { 
     width: 35%;
     height: 100%;
 
@@ -149,6 +168,10 @@ p {
     text-align: center;
 
     font-size: 14px;
+}
+
+.sign-up-btn:hover {
+    background: none;
 }
 
 header h1 {
@@ -472,6 +495,10 @@ header h2 {
     border-radius: 20px;
 
     margin-bottom: 20px;
+}
+
+.cards-item:hover {
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.3));
 }
 
 .cards-item:not(:last-child) {
